@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+    </section>
+</body>
+   <section>
+       <div class="circle">
+       <header>
+           <a href="#"><img src="logo.ong" class="logo"></a>
+           <div class="toggle" onclick="toggleMenu();"></div>
+           <ul class="navigation">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Menu</a></li>
+               <li><a href="#">What's New</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+       </header>
+       <div class="content">
+           <div class="textBox">
+               <h2>It's not just a coffee<br>It's <span> Starbucks </span></h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ullamcorper lorem. Praesent nec est sem. Mauris tristique tempor dignissim. Fusce fringilla mi a mauris pretium, et facilisis massa elementum. Quisque maximus interdum elit et molestie. Aliquam non dapibus tortor. Mauris non sagittis felis.</p>
+               <a href="#">Learn More</a>
+           </div>
+           <diV class="imgBox">
+               <img src="images/starbucks.png" class="starbucks">
+           </diV>
+       </div>
+       <ul class="thumb">
+           <li><a href="#"><img src="images/facebook.png"></a></li>
+           <li><a href="#"><img src="images/twitter.png"></a></li>
+           <li><a href="#"><img src="images/instagram.png"></a></li>
+       </ul>
+   </section>
+
+   <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src = anything;
+    }
+
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+
+    function toggleMenu(){
+        var menuToggle = document.quearySelector('.toggle');
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active') 
+        navigation.classList.toggle('active')
+    }
+    </script>
+</body>
+</html>
